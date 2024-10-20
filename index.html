@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+<link rel="stylesheet " href="style.css"> 
+</head>
+<body>
+  <div class="container">
+    <!-- Left Section with Illustration -->
+    <div class="left-section">
+      <div class="image-wrapper">
+        <img src="images/person.jpg" alt="User illustration">
+      </div>
+      
+    </div>
+
+    <!-- Right Section with Login Form -->
+    <div class="right-section">
+      <h2>Welcome Back</h2>
+      <p>Sign in to continue your progress</p> 
+
+      <form id="loginForm">
+        <label for="username">email</label>
+        <input type="text" class="data" id="username" name="username" placeholder="Email " required>
+        <div class="error">adkflj;kj</div>
+        <input type="password" class="data" id="password" placeholder="Password" required>
+        <input type="tel" class="data" id="phone" placeholder="Phone Number" required>
+        <input type="text" class="data" id="address" placeholder="Address" required>
+
+        <div class="options">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn">Sign In</button>
+
+        <p>OR LOGIN WITH</p>
+        <div class="social-login">
+          <a href="#"><img src="images/isnta.png"></a>
+          <a href="#"><img src="images/facebk.png"></a>
+          <a href="#"><img src="images/google.png"></a>
+          <a href="#"><img src="images/twitter.png"></a>
+        </div>
+
+        <p>Don't have an account? <a href="#">Register Here</a></p>
+      </form>
+
+      <!-- Hidden Welcome Message -->
+      <div id="welcomeMessage" class="hidden">
+        <h1>Welcome, User!</h1>
+        <p>We’re glad to see you back 🎉</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
